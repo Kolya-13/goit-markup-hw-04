@@ -58,7 +58,7 @@ img {
   }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
@@ -78,6 +78,10 @@ img {
   margin-top: 30px;
   }
 
+
+.priorities-list-item {
+    --grid-item: 4;
+} 
 /* ======= END GENERAL STYLE ======= */
 
 /* ======= VARIABLE ======= */
@@ -91,6 +95,7 @@ img {
     --light-text-color: #FFFFFF;
     --text-color: #212121;
     --team-section-color: #F5F4FA;
+    --filter-button-color:#F5F4FA;
 }
 
 /* ======= END VARIABLE ======= */
@@ -123,6 +128,7 @@ header {
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 } 
 
 
@@ -134,6 +140,9 @@ header {
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px
     }
 
 .logo-span {
@@ -145,10 +154,6 @@ header {
     display: flex;
 } 
 
-
-.navigation-list {
-    margin-left: 93px;
-}
 
 .navigation-list-item {
     display: block;
@@ -178,6 +183,8 @@ header {
     }
 
 .header-contact-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
@@ -186,21 +193,32 @@ header {
     text-decoration: none;
     }
 
+    
  .contact-link {
     list-style: none;
     align-items: center;
     margin-left: auto;
   }
 
-.header-contact :last-child {
-    margin-left: 50px;
-    margin-right: 0px;
+.header-contact:not(:last-child) {
+    margin-right: 50px;
 }
 
 .header-contact-link:hover,
 .header-contact-link:focus {
     color: var(--accent-color)
     }
+
+/* mail-icon */
+
+.mail-icon {
+    width: 16px; 
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* end mail-icon */
 
 /* ======= END HEADER ======= */
 
@@ -230,6 +248,11 @@ header {
     margin-right: auto;
     background: #2F303A;
     text-align: center;
+    background-size: cover;
+    background-image:  linear-gradient(to right, rgba(47, 48, 58, .4),rgba(47, 48, 58, .4)), url(../CSS/images-style/Img-1.jpg);
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container-hero {
@@ -334,6 +357,70 @@ header {
     margin-top: 10px;
 }
 
+/* icons */
+
+.details::before{
+    display: inline-flex;
+    content:"";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-image: url(./svg/details.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-color: var(--filter-button-color);
+    background-color: var(--filter-button-color);
+    border-radius: 4px;
+  }
+  
+  .time::before{
+    display: inline-flex;
+    content:"";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-image: url(./svg/time.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-color: var(--filter-button-color);
+    background-color: var(--filter-button-color);
+    border-radius: 4px;
+  }
+  
+  .plan::before{
+    display: inline-flex;
+    content:"";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-image: url(./svg/plan.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-color: var(--filter-button-color);
+    background-color: var(--filter-button-color);
+    border-radius: 4px;
+  }
+  
+  .techno::before{
+    display: inline-flex;
+    content:"";
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-image: url(./svg/techno.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    border-color: var(--filter-button-color);
+    background-color: var(--filter-button-color);
+    border-radius: 4px;
+  }
+
+/* end icons */
+
 /* ======= END PRIORITIES ======= */ 
 
 /* ======= ABOUT ======= */ 
@@ -401,6 +488,7 @@ header {
 .team .team-text {
     padding-top: 30px;
     padding-bottom: 30px;
+    text-align: center;
     
 }
 
@@ -427,7 +515,78 @@ header {
     color: #757575;
 }
 
+.social-icons {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #757575;
+    margin-left: 32px;
+}
+
+.social-icons-item + .social-icons-item {
+    margin-left: 10px;  
+}
+
+.social-icons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--light-text-color);
+    fill: #AFB1B8;
+}
+
+.social-icons-link .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  fill: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+
+
 /* ======= END TEAM ======= */ 
+
+/* ======= CLIENTS ======= */ 
+
+.company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.company-list {
+    display: inline-flex;
+}
+
+.company-item {
+    --grid-item: 6
+}
+
+.company .company-icons-link {
+    display: inline-flex;
+    fill: #AFB1B8;
+}
+
+.company-item .company-icons-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.company .logo-1 {
+    width: 44.27px;
+    height: 49.23px;
+}
+
+/* ======= END CLIENTS ======= */ 
 
 /* ======= PORTFOLIO ======= */
 
@@ -557,20 +716,18 @@ header {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    
+    display: flex;
+}
 
+.information {
+    flex-basis: calc((50% - 45px) / 2);
 }
 
 .footer-list {
     padding-top: 20px;
 }
 
-.footer-list-item {
-    list-style: none;
-    padding-bottom: 9px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
+
 
 .footer-logotype {
     font-family: var(--logo-font);
@@ -586,7 +743,19 @@ header {
     color: #FFFFFF;
     }
 
+.footer-addres {
+    font-style: normal;
+}
+
+.footer-list-item {
+    list-style: none;
+    padding-bottom: 9px;
+    padding-left: 0px;
+    padding-right: 0px;
+}    
+
 .footer-list-link-maps {
+    display: inline-block;
     font-family: var(--text-font);
     font-weight: normal;
     font-size: 14px;
@@ -621,6 +790,32 @@ header {
 
 .footer-addres {
     font-style: normal;
+}
+
+.social-connect {
+    flex-basis: calc((50% - 45px) / 2);
+}
+
+.footer-connect {
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: inline-flex;
+    margin: 0;
+    justify-content: flex-start;
+}
+.footer .social-icons-link {
+    fill: var(--light-text-color);
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 /* ======= END FOOTER ======= */
