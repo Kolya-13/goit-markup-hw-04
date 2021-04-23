@@ -365,7 +365,7 @@ header {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-image: url(./svg/details.svg);
+    background-image: url(../Images/svg/details.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
@@ -380,7 +380,7 @@ header {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-image: url(./svg/time.svg);
+    background-image: url(../Images/svg/time.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
@@ -395,7 +395,7 @@ header {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-image: url(./svg/plan.svg);
+    background-image: url(../Images/svg/plan.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
@@ -410,7 +410,7 @@ header {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background-image: url(./svg/techno.svg);
+    background-image: url(../Images/svg/techno.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25%;
