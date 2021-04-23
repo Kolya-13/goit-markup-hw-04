@@ -522,6 +522,10 @@ header {
     margin-left: 32px;
 }
 
+.icon {
+    background-color: tomato;
+}
+
 .social-icons-item + .social-icons-item {
     margin-left: 10px;  
 }
@@ -579,6 +583,7 @@ header {
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    
 }
 
 .company .logo-1 {
