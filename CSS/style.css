@@ -249,7 +249,7 @@ header {
     background: #2F303A;
     text-align: center;
     background-size: cover;
-    background-image:  linear-gradient(to right, rgba(47, 48, 58, .4),rgba(47, 48, 58, .4)), url(../CSS/images-style/Img-1.jpg);
+    background-image:  linear-gradient(to right, rgba(47, 48, 58, .4),rgba(47, 48, 58, .4)), url(../Images/images-style/Img-1.jpg);
     background-color: #C4C4C4;
     background-repeat: no-repeat;
   background-position: center;
