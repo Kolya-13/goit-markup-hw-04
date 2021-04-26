@@ -518,13 +518,9 @@ header {
 .social-icons {
     display: inline-flex;
     justify-content: space-between;
-    background-color: #757575;
     margin-left: 32px;
 }
 
-.icon {
-    background-color: tomato;
-}
 
 .social-icons-item + .social-icons-item {
     margin-left: 10px;  
@@ -821,6 +817,12 @@ header {
 .footer .social-icons-link {
     fill: var(--light-text-color);
     background-color: rgba(255, 255, 255, 0.1)
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  fill: var(--light-text-color);
+  background-color: var(--accent-color);
 }
 
 /* ======= END FOOTER ======= */
