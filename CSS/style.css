@@ -545,7 +545,7 @@ header {
 
 .social-icons-link:hover,
 .social-icons-link:focus {
-  fill: var(--light-text-color);
+  fill: #FFFFFF;
   background-color: var(--accent-color);
 }
 
@@ -614,23 +614,23 @@ width: 88.48px;
 height: 45.44px;
 }
 
-.company-icon{
-    transition: fill var(--animation);
-  }
+.company-icon {
+transition: fill var(--animation);
+}
   
-  .company-icons-link:hover .company-icon,
-  .company-icons-link:focus .company-icon {
-    fill: var(--accent-color);
-  }
+.company-icons-link:hover .company-icon,
+.company-icons-link:focus .company-icon {
+fill: var(--accent-color);
+}
   
-  .company-icons-link{
-  transition: border-color var(--animation);
-  }
+.company-icons-link{
+transition: border-color var(--animation);
+}
   
-  .company-icons-link:hover,
-  .company-icons-link:focus{
-  border-color: var(--accent-color);
-  }
+.company-icons-link:hover,
+.company-icons-link:focus {
+border-color: var(--accent-color);
+}
 
 /* ======= END CLIENTS ======= */ 
 
