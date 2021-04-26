@@ -594,18 +594,18 @@ height: 52px;
 }
 
 .company .icon-3 {
-width: 141px;
-height: 142.6px;
+width: 41px;
+height: 42.6px;
 }
     
 .company .icon-4 {
-width: 179.66px;
-height: 142.02px;
+width: 79.66px;
+height: 42.02px;
 }
     
 .company .icon-5 {
-width: 159px;
-height: 147px;
+width: 59px;
+height: 47px;
 }
     
 .company .icon-6 {
@@ -613,18 +613,18 @@ width: 88.48px;
 height: 45.44px;
 }
 
-.company-icon {
+/* .company-icon {
 transition: fill var(--animation);
-}
+} */
   
 .company-icons-link:hover .company-icon,
 .company-icons-link:focus .company-icon {
 fill: var(--accent-color);
 }
   
-.company-icons-link{
+/* .company-icons-link{
 transition: border-color var(--animation);
-}
+} */
   
 .company-icons-link:hover,
 .company-icons-link:focus {
