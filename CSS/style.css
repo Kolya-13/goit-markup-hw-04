@@ -587,6 +587,11 @@ header {
     height: 49.23px;
 }
 
+.company-icon {
+    background-size: contain;
+    background-color: #757575;
+}
+
 /* ======= END CLIENTS ======= */ 
 
 /* ======= PORTFOLIO ======= */
